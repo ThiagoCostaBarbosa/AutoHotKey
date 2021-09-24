@@ -1,2 +1,2 @@
 # AutoHotKey
-Scripts to Autohotkeys
+Scripts that I use in Autohotkey
