@@ -51,5 +51,4 @@ DragImage(img, a1 := 0, a2 := 0, a3 := A_ScreenWidth, a4 := A_ScreenHeight, vari
     final_position_X += X
     final_position_Y += Y
     MouseClickDrag, Left, %inicial_position_X%, %inicial_position_Y%, %final_position_X%, %final_position_Y%
-    Return
 }
