@@ -2,7 +2,7 @@
     Função: RemoveLetterAccents
 
     Descrição:
-    Remove os acentos de uma string.
+        Remove os acentos de uma string.
 
     Parâmetros:
         str - uma string, mesmo que seja multiline.
@@ -12,15 +12,12 @@
 
     Exemplo:
         > text := RemoveLetterAccents("A vida é bela`! Então vá vivê-la`!")
-        
+
     Licença:
-        - Versão 1.05 <http://www.autohotkey.net/~polyethene/#dateparse>
         - Dedicado ao domínio público (CC0 1.0) <http://creativecommons.org/publicdomain/zero/1.0/>
 * /
 
-
-
-RemoveLetterAccents(str){
+RemoveLetterAccents(text){
     static Array := { "a" : "áàâǎăãảạäåāąấầẫẩậắằẵẳặǻ"
         , "c" : "ćĉčċç"
         , "d" : "ďđð"
@@ -41,8 +38,8 @@ RemoveLetterAccents(str){
     {
         StringUpper, VU, v
         StringUpper, KU, k
-        str:=RegExReplace(str,"[" v "]",k)
-        str:=RegExReplace(str,"[" VU "]",KU)
+        text:=RegExReplace(text,"[" v "]",k)
+        text:=RegExReplace(text,"[" VU "]",KU)
     }
-    Return str
+    Return text
 }
