@@ -2,7 +2,7 @@
     Função: ClickImage
 
     Descrição:
-        Clica na coordenada central da imagem pesquisada e arrasta o mouse até a coordenada desejada a partir da imagem.
+        Clica na coordenada desejada baseado na imagem pesquisada.
 
     Parâmetros:
         img - string com o caminho da imagem para procurar.
